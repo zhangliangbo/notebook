@@ -1,0 +1,22 @@
+{
+  "description": "Save Time",
+  "properties": {
+    "v": "b84cb6112f"
+  },
+  "link": "https://github.com/zhangliangbo/savetime",
+  "repositories": [
+    "https://jitpack.io"
+  ],
+  "dependencies": [
+    "io.github.zhangliangbo:savetime:$v"
+  ],
+  "imports": [
+    "io.github.zhangliangbo.savetime.*",
+    "org.apache.commons.lang3.tuple.*",
+    "com.fasterxml.jackson.databind.*",
+    "java.io.*",
+    "java.nio.file.*",
+    "java.util.concurrent.*"
+  ],
+  "init": ["fun JsonNode.toDf(): DataFrame<*>{\n        return DataFrame.readJsonStr(this.toString())\n    }","println(java.time.LocalDateTime.now())"]
+}
