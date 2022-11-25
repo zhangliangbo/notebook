@@ -1,2 +1,2 @@
 # notebook
-some example code
+some practice code
