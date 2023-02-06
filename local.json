@@ -1,0 +1,27 @@
+{
+  "description": "Save Time",
+  "properties": {
+    "v": "1.0-SNAPSHOT"
+  },
+  "link": "https://github.com/zhangliangbo/savetime",
+  "repositories": [
+    "*mavenLocal"
+  ],
+  "dependencies": [
+    "io.github.zhangliangbo:savetime:$v"
+  ],
+  "imports": [
+    "io.github.zhangliangbo.savetime.*",
+    "org.apache.commons.lang3.tuple.*",
+    "com.fasterxml.jackson.databind.*",
+    "com.fasterxml.jackson.databind.node.*",
+    "java.io.*",
+    "java.nio.file.*",
+    "java.time.*",
+    "java.util.*",
+    "java.util.concurrent.*",
+    "java.lang.*",
+    "java.net.*"
+  ],
+  "init": ["println(java.time.LocalDateTime.now())"]
+}
